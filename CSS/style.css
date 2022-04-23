@@ -207,7 +207,7 @@ main{
         position: absolute;
         top: 7rem;
         right: 1rem;
-        width: 55%;
+        width: 57%;
         font-size: 2rem;
         font-weight: 500;
         color: var(--text);
@@ -367,7 +367,7 @@ main{
         position: absolute;
         top: 4rem;
         right: 1rem;
-        width: 55%;
+        width: 57%;
         font-size: 1.6rem;
         font-weight: 500;
         color: var(--text);
@@ -532,10 +532,13 @@ main{
     .img-text{
         top: 3rem;
         right: 10px;
-        width: 50%;
+        width: 57%;
         font-size: 1.2rem;
         text-align: center;
     
+    }
+    .text-3, .text-4{
+        width: 50%;
     }
     .dot{
         width: 0.8rem;
