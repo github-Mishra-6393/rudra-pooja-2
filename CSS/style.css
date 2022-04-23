@@ -1,0 +1,711 @@
+/* Adding font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font --- font-family: var(--font-lob); */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+:root{
+    --logo : 'Amita', cursive;
+    --font-lob:  'Lobster', cursive;
+    --heading: rgb(102, 10, 29);
+    --text : rgb(150, 18, 44);
+    --detail :'Noto Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    position: relative;
+    padding-bottom: 1.4rem;
+}
+/* slide start */
+.slide-div{
+    display: none;
+}
+.slide-div img{
+    width: 100vw;
+    height: 35rem;
+    opacity: 0.8;
+    
+
+}
+
+.img-text{
+    position: absolute;
+    top: 10rem;
+    right: 1rem;
+    width: 55%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-right: 0.2rem;
+    font-family: var(--detail);
+    text-align: center;
+
+}
+.text-3, .text-4{
+    width: 50%;
+}
+
+.dot-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dot{
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(128, 128, 128, 0.39);
+    border-radius: 50%;
+    border: 1px solid rgba(38, 37, 37, 0.785);
+    margin-right: 3px;
+    
+}
+.dot:hover, .active{
+    background-color: darkgray;
+}
+/* slide ends */
+.h1{
+    text-align: center;
+    font-family: var(--font-lob);
+    color: var(--heading);
+    margin-top: 10px;
+
+}
+
+/* .card-wraper{
+    background-color: rgba(247, 155, 170, 0.171);
+} */
+.card-wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    border: 1px solid black;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 45%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(233, 75, 60, 0.493),rgba(116, 50, 44, 0.493));
+}
+.heading{
+    display: flex;
+    color: var(--heading);
+}
+.card img{
+    opacity: 0.8;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin: 4px 10px ;
+}
+.card h2{
+    color: var(--heading);
+    margin: 1rem 2px 2px 2.5rem;
+    font-size: 2rem;
+    font-family: var(--logo);
+
+}
+.details h4{
+    text-align: center;
+    color: var(--heading);
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.details p{
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    color: var(--text);
+    font-family: var(--detail);
+    font-size: 1.3rem;
+    width: 85%;
+    margin: auto;
+}
+
+
+
+.gallery{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(138, 72, 26, 0.219);
+    width: auto;
+    height: auto;
+    min-height: 10rem;
+    margin: 10px 20px;
+    min-height: 15rem;
+}
+.gallery h3{
+    font-family: var(--font-lob);
+    color: var(--heading);
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 8px;
+
+
+}
+.gallery p{
+    font-family: var(--font-lob);
+    color: var(--text);
+    text-align: center;
+    font-weight: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+.about-wraper{
+    background-color: rgba(210, 105, 30, 0.205);
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius:10px ;
+    position: relative;
+
+}
+.about-head{
+    display: flex;
+    justify-content: center;
+}
+.about img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    
+}
+.about h3{
+    margin:2rem;
+    font-family: var(--font-lob);
+    color: var(--heading);
+    font-size: 2rem;
+}
+.about-details{
+    font-family: var(--detail);
+    color: var(--text);
+    text-align: justify;
+    width: 80%;
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+    padding: 5px 0.5rem;
+    line-height: 2rem;
+}
+@media only screen and (max-width:1000px) and (min-width: 861px){
+    
+    .slide-div img{
+        width: 100vw;
+        height: 25rem;
+        opacity: 0.8;
+        
+    
+    }
+    
+    .img-text{
+        position: absolute;
+        top: 7rem;
+        right: 1rem;
+        width: 55%;
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--text);
+        margin-right: 0.2rem;
+        font-family: var(--logo);
+        text-align: center;
+    
+    }
+    .text-3, .text-4{
+        width: 50%;
+    }
+    
+    .dot-wraper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .dot{
+        width: 0.8rem;
+        height: 0.8rem;
+        background-color: rgba(128, 128, 128, 0.39);
+        border-radius: 50%;
+        border: 1px solid rgba(38, 37, 37, 0.785);
+        margin-right: 3px;
+        
+    }
+    .dot:hover, .active{
+        background-color: darkgray;
+    }
+    /* slide ends */
+    .h1{
+        text-align: center;
+        font-family: var(--font-lob);
+        color: var(--heading);
+        margin-top: 10px;
+    
+    }
+    
+    /* .card-wraper{
+        background-color: rgba(247, 155, 170, 0.171);
+    } */
+    .card-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .card{
+        border: 1px solid black;
+        margin: 10px auto;
+        border-radius: 5px;
+        width: 45%;
+        min-height: 18rem;
+        
+    }
+    .card img{
+        opacity: 0.8;
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        margin: 10px ;
+    
+        
+    }
+    .card h2{
+        color: var(--heading);
+        margin: 1rem 2px 2px 2.5rem;
+        font-size: 1.7rem;
+        font-family: var(--logo);
+    
+    }
+    .card .details p{
+        text-align: justify;
+        padding: 0.5rem 1rem;
+        color: var(--text);
+        font-size: 1.2rem;
+        width: 85%;
+        margin: auto;
+    }
+    
+    
+    
+    .gallery{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgba(138, 72, 26, 0.219);
+        width: auto;
+        height: auto;
+        min-height: 10rem;
+        margin: 10px 20px;
+        min-height: 15rem;
+    }
+    .gallery h3{
+        font-family: var(--font-lob);
+        color: var(--heading);
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 8px;
+    
+    
+    }
+    .gallery p{
+        font-family: var(--font-lob);
+        color: var(--text);
+        text-align: center;
+        font-weight: 1.2rem;
+        font-weight: bold;
+        margin-top: 0.8rem;
+    }
+    .about-wraper{
+        background-color: rgba(210, 105, 30, 0.205);
+        border: 1px solid black;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius:10px ;
+        position: relative;
+    
+    }
+    .about-head{
+        display: flex;
+        justify-content: center;
+    }
+    .about img{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        
+    }
+    .about h3{
+        margin:1.3rem;
+        font-family: var(--font-lob);
+        color: var(--heading);
+        font-size: 2rem;
+    }
+    .about-details{
+        font-family: var(--font-lob);
+        color: var(--detail);
+        text-align: justify;
+        width: 80%;
+        margin: 0.5rem auto;
+        font-size: 1.2rem;
+        padding: 5px 0.5rem;
+        line-height: 2rem;
+    }
+}
+@media only screen and (max-width:860px) and (min-width: 601px){
+    
+    .slide-div img{
+        width: 100vw;
+        height: 23rem;
+        opacity: 0.8;
+        
+    
+    }
+    
+    .img-text{
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        width: 55%;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--text);
+        margin-right: 0.2rem;
+        font-family: var(--logo);
+        text-align: center;
+    
+    }
+    .text-3, .text-4{
+        width: 50%;
+    }
+    
+    .dot-wraper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .dot{
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: rgba(128, 128, 128, 0.39);
+        border-radius: 50%;
+        border: 1px solid rgba(38, 37, 37, 0.785);
+        margin-right: 3px;
+        
+    }
+    .dot:hover, .active{
+        background-color: darkgray;
+    }
+    /* slide ends */
+    .h1{
+        text-align: center;
+        font-family: var(--font-lob);
+        color: var(--heading);
+        margin-top: 10px;
+        font-size: 1.6rem;
+    
+    }
+    
+    /* .card-wraper{
+        background-color: rgba(247, 155, 170, 0.171);
+    } */
+    .card-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .card{
+        border: 1px solid black;
+        margin: 10px auto;
+        border-radius: 5px;
+        width: 45%;
+        min-height: 16rem;
+        
+    }
+    .card img{
+        opacity: 0.8;
+        border-radius: 50%;
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 10px ;
+    
+        
+    }
+    .card h2{
+        color: var(--heading);
+        margin: 1rem 2px 2px 1.2rem;
+        font-size: 1.5rem;
+        font-family: var(--logo);
+    
+    }
+    .card .details p{
+        text-align: justify;
+        padding: 0.5rem 1rem;
+        color: var(--text);
+        font-size: 1.2rem;
+        width: 85%;
+        margin: auto;
+    }
+    
+    
+    
+    .gallery{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgba(138, 72, 26, 0.219);
+        width: auto;
+        height: auto;
+        min-height: 10rem;
+        margin: 10px 20px;
+        min-height: 15rem;
+    }
+    .gallery h3{
+        font-family: var(--font-lob);
+        color: var(--heading);
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 8px;
+    
+    
+    }
+    .gallery p{
+        font-family: var(--font-lob);
+        color: var(--text);
+        text-align: center;
+        font-weight: 1.2rem;
+        font-weight: bold;
+        margin-top: 0.8rem;
+    }
+    .about-wraper{
+        background-color: rgba(210, 105, 30, 0.205);
+        border: 1px solid black;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius:10px ;
+        position: relative;
+    
+    }
+    .about-head{
+        display: flex;
+        justify-content: center;
+    }
+    .about img{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        
+    }
+    .about h3{
+        margin:1.3rem;
+        font-family: var(--font-lob);
+        color: var(--heading);
+        font-size: 1.5rem;
+    }
+    .about-details{
+        font-family: var(--font-lob);
+        color: var(--text);
+        text-align: justify;
+        width: 85%;
+        margin: 0.5rem auto;
+        font-size: 1.2rem;
+        padding: 5px 0.5rem;
+        line-height: 2rem;
+    }
+}
+/* *** *** *** *** *** MAX WIDTH -- 600PX *** *** *** ***  */
+
+@media only screen and (max-width: 600px) and (min-width: 401px ){
+
+    main{
+        position: relative;
+        padding-bottom: 1rem;
+    }
+    
+    .slide-div img{
+        width: 100vw;
+        height: 20rem;
+        opacity: 0.9;
+    }
+    
+    .img-text{
+        top: 3rem;
+        right: 10px;
+        width: 50%;
+        font-size: 1.2rem;
+        text-align: center;
+    
+    }
+    .dot{
+        width: 0.8rem;
+        height: 0.8rem;
+        
+    }
+    
+    /* slide ends */
+    .h1{
+        margin-top: 10px;
+        font-size: 1.3rem;
+    
+    }
+    
+    .card-wraper{
+        display: block;
+    }
+    .card{
+        width: 90%;
+        margin: 1rem auto;
+        min-height: unset;
+    }
+    .card img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .card h2{
+        margin: 1rem 2px 2px 1rem;
+        font-size: 1.2rem; 
+    }
+    .details p{
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    
+    
+    .gallery h3{
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    .gallery p{
+        margin-top: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .about-head{
+        display: flex;
+        align-items: center;
+    }
+    .about img{
+        width: 3rem;
+        height: 3rem;
+        
+    }
+    .about h3{
+        margin-left: 1rem;
+        font-size: 1.3rem;
+        
+    }
+    .about-details{
+        
+        line-height: 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 100%;
+    }
+}
+
+
+/* *** *** *** *** *** MAX WIDTH -- 400PX *** *** *** ***  */
+
+@media only screen and (max-width: 400px){
+
+    main{
+        position: relative;
+        padding-bottom: 1rem;
+    }
+    
+    .slide-div img{
+        width: 100vw;
+        height: 13rem;
+        opacity: 0.9;
+    }
+    
+    .img-text{
+        top: 2rem;
+        right: 10px;
+        width: 57%;
+        font-size: 1rem;
+    
+    }
+    .text-3, .text-4{
+        width: 50%;
+    }
+    .dot{
+        width: 0.5rem;
+        height: 0.5rem;
+        
+    }
+    
+    /* slide ends */
+    .h1{
+        text-align: center;
+        font-family: var(--font-lob);
+        margin-top: 10px;
+        font-size: 1.2rem;
+    
+    }
+    
+    .card-wraper{
+        display: block;
+    }
+    .card{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .card img{
+        opacity: 0.8;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        margin: 4px 10px ;
+    }
+    .card h2{
+        margin: 1rem 2px 2px 0.8rem;
+        font-size: 1.1rem;
+        
+        
+    }
+    .details p{
+        text-align: left;
+        font-size: 1rem;
+        
+    }
+    .details h4{
+        font-size: 1rem;
+    }
+    .gallery h3{
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    .gallery p{
+        margin-top: 0.8rem;
+        font-size: 1rem;
+    }
+    .about-wraper{
+        padding: 10px;
+    }
+    .about-head{
+        display: flex;
+        align-items: center;
+    }
+    .about img{
+        width: 3rem;
+        height: 3rem;
+        
+    }
+    .about h3{
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        
+    }
+    .about-details{
+        
+        line-height: 1.2rem;
+        word-spacing: 2px;
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: justify;
+        padding: 0;
+    }
+}
